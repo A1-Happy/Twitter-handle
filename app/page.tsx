@@ -9,8 +9,8 @@ export default function Home() {
   
   const isValidHandle = twitterHandle.length > 0
   const twitterUrl = hashtag 
-    ? `https://twitter.com/${twitterHandle}?hashtag=${hashtag.replace('#', '')}`
-    : `https://twitter.com/${twitterHandle}`
+    ? `https://twitter.com/intent/tweet?text=@${twitterHandle}&hashtags=${hashtag.replace('#', '')}`
+    : `https://twitter.com/intent/tweet?text=@${twitterHandle}`
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-100">
